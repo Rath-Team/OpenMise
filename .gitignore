@@ -48,3 +48,12 @@ tmp/
 *.pt
 *.pth
 *.safetensors
+
+# Reviewed public showcase files
+!/assets/readme/spanish-opening-scene-editing.mp4
+!/assets/readme/spanish-opening-scene-editing.gif
+!/assets/readme/walk-in-3dgs-room.mp4
+!/assets/readme/walk-in-3dgs-room.gif
+!/assets/readme/chess-without-openmise.gif
+!/assets/readme/chess-openmise-white-model.gif
+!/assets/readme/chess-openmise-rendered.gif
