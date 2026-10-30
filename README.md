@@ -47,13 +47,17 @@ OpenMise 提供空间编辑的工作流程和操作约定，Blender 等场景工
 
 白模由 OpenMise 工作流生成；第三段展示在白模基础上的下游渲染效果，该渲染服务不包含在当前开源版本中。
 
-### 场景编辑：国际象棋空间搭建
+### 场景编辑：OpenMise 工具调用与 Blender 同步演示
 
-[![OpenMise 国际象棋场景编辑过程](assets/readme/spanish-opening-scene-editing.gif)](assets/readme/spanish-opening-scene-editing.mp4)
+[![左侧 OpenMise 工具调用与右侧 Blender 场景编辑同步演示](assets/readme/spanish-opening-scene-editing.gif)](assets/readme/spanish-opening-scene-editing.mp4)
 
-从棋盘、棋子到人物、灯光，展示空间资产逐步进入 Blender 场景的过程。
-公开录屏保留 Blender 编辑区域，已裁去会话日志面板与窗口标题栏。
-动图为第 28–44 秒节选；[观看完整场景编辑视频，约 98 秒](assets/readme/spanish-opening-scene-editing.mp4)。
+这段录屏将 OpenMise 的工具调用与 Blender 中的实际变化并排展示：
+
+- **左侧：OpenMise 调用工具。** 查看调用名称、参数摘要和执行反馈，了解 Agent 如何组织棋局、资产、人物、灯光与镜头操作。
+- **右侧：Blender 场景同步变化。** 对照观察棋盘、棋子与人物逐步进入场景，以及灯光、相机和视角的调整。
+
+从“Agent 发起工具调用”到“空间场景发生变化”，直观看到 OpenMise 作为 Agent 链接空间场景的桥梁如何工作。
+动图为第 28–44 秒节选；[观看完整工具调用与场景编辑视频，约 98 秒](assets/readme/spanish-opening-scene-editing.mp4)。
 
 ### 扫描场景：人物在 3DGS 房间中行走
 

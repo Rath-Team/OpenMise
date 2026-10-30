@@ -54,14 +54,18 @@ positions relative to the board, and how these structures and actions carry into
 The blockout is produced through the OpenMise workflow. The third example shows downstream
 rendering based on that blockout; the rendering service is outside this open-source edition.
 
-### Scene editing: building a chess scene
+### Scene editing: OpenMise tool calls and Blender side by side
 
-[![OpenMise chess scene editing in Blender](assets/readme/spanish-opening-scene-editing.gif)](assets/readme/spanish-opening-scene-editing.mp4)
+[![OpenMise tool calls on the left and synchronized Blender scene editing on the right](assets/readme/spanish-opening-scene-editing.gif)](assets/readme/spanish-opening-scene-editing.mp4)
 
-The recording shows the board, pieces, characters, and lighting being assembled in Blender.
-The public recording retains the Blender editing area; the session log panel and window title bar
-have been cropped out. The GIF covers seconds 28–44.
-[Watch the full scene editing video, approximately 98 seconds](assets/readme/spanish-opening-scene-editing.mp4).
+This recording shows OpenMise tool calls alongside the actual changes in Blender:
+
+- **Left: OpenMise tool calls.** Follow call names, argument summaries, and execution feedback as the Agent organizes chess moves, assets, characters, lighting, and cameras.
+- **Right: synchronized Blender scene changes.** Watch the board, pieces, and players being assembled, together with lighting, camera, and view adjustments.
+
+Following each tool call through to its effect on the scene shows OpenMise in its role as
+the bridge connecting Agents to spatial scenes. The GIF covers seconds 28–44.
+[Watch the full tool-call and scene-editing video, approximately 98 seconds](assets/readme/spanish-opening-scene-editing.mp4).
 
 ### Scanned scenes: a character walking through a 3DGS room
 
