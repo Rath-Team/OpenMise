@@ -30,7 +30,29 @@ User request → Agent → OpenMise spatial editing workflows → Blender operat
 These demonstrations were recorded with a configured toolchain and illustrate spatial editing
 and downstream applications. Reproduction requires the relevant host, execution tools, and assets;
 downloading this repository does not install the complete demonstrated toolchain.
-GIFs play inline. Click either of the first two previews to open its bundled MP4.
+Start with the three-way chess comparison, then explore scene editing and scanned-scene navigation.
+GIFs play inline; the scene editing and room-walk demonstrations also include full MP4 videos.
+
+### Results compared: prompt-only generation → OpenMise blockout → rendering from the blockout
+
+The chess examples compare two production paths: **generate a video directly from a text prompt**,
+or **use OpenMise to build a spatial scene and generate a blockout video, then render the final
+video using that blockout as a reference**. The three previews show the direct generation result,
+the spatial and motion reference created with OpenMise, and the result rendered using that reference.
+
+| ① Chess video generated from a prompt alone | ② Blockout video generated with OpenMise | ③ Final video rendered using the blockout |
+|:---:|:---:|:---:|
+| ![Prompt-only chess video without an OpenMise blockout reference](assets/readme/chess-without-openmise.gif) | ![OpenMise chess blockout showing spatial layout and action order](assets/readme/chess-openmise-white-model.gif) | ![Chess video rendered using the OpenMise blockout as a reference](assets/readme/chess-openmise-rendered.gif) |
+| **Text prompt → Video** | **Agent + OpenMise → Editable scene → Blockout video** | **Blockout video + Rendering → Final video** |
+| Describe the players, board, and actions in text and send the prompt directly to a video model. | Organize the board, pieces, players, move sequence, and cameras in a 3D scene, then export an inspectable blockout video. | Use the blockout video as a spatial and motion reference while rendering the visual style and appearance. |
+
+**OpenMise turns the spatial relationships and action requirements in a prompt into an editable,
+previewable scene, giving downstream rendering an explicit spatial and motion reference.**
+When comparing the previews, look at piece positions and identity, move order, the players'
+positions relative to the board, and how these structures and actions carry into the rendered result.
+
+The blockout is produced through the OpenMise workflow. The third example shows downstream
+rendering based on that blockout; the rendering service is outside this open-source edition.
 
 ### Scene editing: building a chess scene
 
@@ -47,16 +69,6 @@ have been cropped out. The GIF covers seconds 28–44.
 
 A scanned environment, a procedural character, and a moving camera in one scene.
 [Watch the full 16-second video](assets/readme/walk-in-3dgs-room.mp4).
-
-### Downstream application: chess video comparison
-
-| Generation example without OpenMise | OpenMise blockout previs | Downstream rendering based on the blockout |
-|:---:|:---:|:---:|
-| ![Chess example without OpenMise](assets/readme/chess-without-openmise.gif) | ![OpenMise chess blockout previs](assets/readme/chess-openmise-white-model.gif) | ![Rendered chess example based on the blockout](assets/readme/chess-openmise-rendered.gif) |
-
-These examples illustrate how editable spatial scenes organize layouts, action order, and shots;
-they are examples, not a quality benchmark. The right-hand video includes downstream rendering.
-That rendering service is outside the scope of this open-source edition.
 
 ## What you can do
 
